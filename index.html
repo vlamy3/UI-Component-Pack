@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Component Pack | Cedar & Code</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header class="ui-header">
+        <h1>Cedar & Code UI Kit</h1>
+        <p>Copy. Paste. Build. 🌲</p>
+    </header>
+
+    <main class="container">
+        <section class="comp-section">
+            <h2>01. Glassmorphism Nav</h2>
+            <nav class="glass-nav">
+                <div class="logo">C<span>&</span>C</div>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <button class="btn-cedar">Get Started</button>
+                </div>
+            </nav>
+        </section>
+
+        <section class="comp-section">
+            <h2>02. Interaction Buttons</h2>
+            <div class="button-group">
+                <button class="btn-cedar">Primary Action</button>
+                <button class="btn-outline">Outline Button</button>
+                <button class="btn-ghost">Ghost Mode</button>
+            </div>
+        </section>
+
+        <section class="comp-section">
+            <h2>03. Modern Forms</h2>
+            <div class="form-container">
+                <div class="input-wrapper">
+                    <label>Project Title</label>
+                    <input type="text" class="cedar-input" placeholder="Enter name...">
+                </div>
+                <div class="input-wrapper">
+                    <label>Budget Range</label>
+                    <select class="cedar-input">
+                        <option>$1k - $3k</option>
+                        <option>$3k - $5k</option>
+                        <option>$5k+</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="comp-section">
+            <h2>04. Service Cards</h2>
+            <div class="ui-grid">
+                <div class="ui-card">
+                    <i data-lucide="zap"></i>
+                    <h3>Fast Performance</h3>
+                    <p>Optimized for Google Lighthouse scores and speed.</p>
+                </div>
+                <div class="ui-card accent">
+                    <i data-lucide="shield-check"></i>
+                    <h3>Secure Code</h3>
+                    <p>Written with best practices and clean architecture.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+:root {
+    --primary: #2D4F1E;
+    --primary-light: #4A6D3A;
+    --text: #1a1a1a;
+    --bg: #f4f7f2;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.container { max-width: 900px; margin: 0 auto; }
+.ui-header { text-align: center; margin-bottom: 4rem; }
+.comp-section { margin-bottom: 5rem; }
+.comp-section h2 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); margin-bottom: 1.5rem; opacity: 0.7; }
+
+/* 01. Glass Nav */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* 02. Buttons */
+.button-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-cedar { background: var(--primary); color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: 0.3s; }
+.btn-cedar:hover { background: var(--primary-light); transform: translateY(-2px); }
+.btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); padding: 10px 22px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+.btn-ghost { background: rgba(45, 79, 30, 0.05); border: none; color: var(--primary); padding: 12px 24px; border-radius: 8px; cursor: pointer; }
+
+/* 03. Forms */
+.form-container { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; background: var(--white); padding: 2rem; border-radius: 12px; }
+.input-wrapper label { display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.5rem; }
+.cedar-input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; outline-color: var(--primary); }
+
+/* 04. UI Cards */
+.ui-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.ui-card { background: var(--white); padding: 2rem; border-radius: 20px; transition: 0.3s; }
+.ui-card i { color: var(--primary); margin-bottom: 1rem; }
+.ui-card.accent { background: var(--primary); color: white; }
+.ui-card.accent i { color: var(--white); }
